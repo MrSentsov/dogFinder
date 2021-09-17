@@ -1,0 +1,19 @@
+{
+  "name": "dogfinder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai-sorted": "^0.2.0",
+    "cypress": "^8.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-plugin-cypress": "^2.12.1"
+  }
+}
