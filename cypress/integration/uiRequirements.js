@@ -7,9 +7,7 @@ describe(
     "The UI displays the required items",
     () => {
         before(() => {
-
             cy.visit(Cypress.env("url")) // The environmental url variable can be changed in cypress.json
-
         })
 
         it(
@@ -20,7 +18,6 @@ describe(
                         "have.text",
                         "Dogs!"
                     ) // Verifing that the app title is visible and 'Dogs'
-
             }
         )
 
