@@ -12,7 +12,7 @@ describe(
         })
 
         it(
-            "The user can select a breed’s button",
+            "TC8 - The user can select a breed’s button",
             () => {
                 cy.get(breedResults).contains(dogBreed)
                     .should("be.visible")
@@ -21,7 +21,7 @@ describe(
         )
 
         it(
-            "The user can view pictures of a selected dog breed",
+            "TC9 - The user can view pictures of a selected dog breed",
             () => {
                 // Verifies that the same breed name displays
                 cy.get(".breed-gallery_newBreedBanner__7_mum span").should(

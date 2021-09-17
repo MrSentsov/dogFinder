@@ -16,7 +16,7 @@ describe(
         })
 
         it(
-            "Displays the breeds whose names include the search term",
+            "TC6 - Displays the breeds whose names include the search term",
             () => {
                 cy.get(search).type(searchInput)
                 cy.get(breeds).each(($el, index, $list) => {
@@ -32,7 +32,7 @@ describe(
         )
 
         it(
-            "Displays the breeds in alphabetical order",
+            "TC7 - Displays the breeds in alphabetical order",
             () => {
                 cy.then(() => {
                     // Sorting the array

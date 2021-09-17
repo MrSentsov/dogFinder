@@ -13,7 +13,7 @@ describe(
         })
 
         it(
-            "A title element in the top left reading 'Dogs'",
+            "TC2 - A title element in the top left reading 'Dogs'",
             () => {
                 // Verifing that the app title is visible and 'Dogs'
                 cy.get(title).should("be.visible")
@@ -25,7 +25,7 @@ describe(
         )
 
         it(
-            "A search input in the top right with the placeholder text 'Search'",
+            "TC3 - A search input in the top right with the placeholder text 'Search'",
             () => {
                 // Checking to verify that the placeholder of the search is 'search'
                 cy.get(search).should(
@@ -40,7 +40,7 @@ describe(
         )
 
         it(
-            "The breed names in a grid of 3 rows of 4 buttons (12 total)",
+            "TC4 - The breed names in a grid of 3 rows of 4 buttons (12 total)",
             () => {
                 // Asserting that there shold be 12 breed buttons displayed in total (3 rows of 4 buttons)
                 cy.get(breeds).should(
@@ -52,7 +52,7 @@ describe(
         )
 
         it(
-            "A message below the breeds when no breed is selected",
+            "TC5 - A message below the breeds when no breed is selected",
             () => {
                 // When no breed is selected, this text should display below the breeds
                 cy.get(noBreedMessege).should(
