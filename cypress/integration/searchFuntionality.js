@@ -36,8 +36,8 @@ describe(
             () => {
                 cy.then(() => {
                     // Sorting the array
-                    // Using String.prototype.localCompare()
-                    sortedResults.sort((a, b) => a.localeCompare(b))
+                    sortedResults.sort()
+                    // Sorting the control array
                     expect(results).to.eql(sortedResults)
                 })
             }
